@@ -1,0 +1,17 @@
+---
+interface Props {
+  texto_1: string;
+  texto_2: string;
+  texto_color?: string;
+}
+
+const { texto_1, texto_2, texto_color } = Astro.props;
+---
+
+<h2
+  class="grid place-items-center w-full text-[clamp(1rem,6vw,3rem)] font-title font-bold text-center leading-tight text-pretty"
+  style={texto_color ? `color: ${texto_color}` : ""}
+>
+  <p>{texto_1}</p>
+  <p>{texto_2}</p>
+</h2>

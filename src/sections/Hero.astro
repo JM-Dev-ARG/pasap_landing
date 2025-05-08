@@ -1,26 +1,25 @@
 ---
-import Button from "../components/Button.astro";
+import Boton from "../components/Boton.astro";
 import Container from "../components/Container.astro";
+import Titulos from "../components/Titulos.astro";
 ---
 
-<Container id="hero">
-  <div class="w-full h-dvh grid place-items-center">
+<section id="hero">
+  <Container>
     <h1 class="w-full mx-auto grid place-items-center">
       <img
-        src="/images/BBB.avif"
+        src="/images/logo_completo.avif"
         alt="titulo"
         aria-label="titulo"
-        class="w-[calc (100vw - 2rem)] max-w-[300px]"
+        class="w-[clamp(200px,50vw,400px)] max-w-[400px]"
       />
     </h1>
-    <h2
-      class="grid place-items-center mt-5 w-full text-7xl font-title font-bold text-center leading-tight text-pretty"
-    >
-      <p>Potencia tu liderazgo creativo y obtén</p>
-      <p>Porro aliquam dolorum id rerum</p>
-    </h2>
-    <div class="grid grid-cols-2 gap-5 items-center">
-      <div class="flex flex-col gap-4 p-4">
+    <Titulos
+      texto_1="Potencia tu liderazgo creativo y obtén"
+      texto_2="Porro aliquam dolorum id rerum"
+    />
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
+      <div class="flex flex-col gap-4 p-4 order-2 lg:order-1">
         <p class="text-left text-2xl grid gap-5 leading-normal">
           <span
             >Lorem ipsum dolor sit <strong class="font-semibold"
@@ -35,16 +34,16 @@ import Container from "../components/Container.astro";
           >
         </p>
         <div class="mt-4 w-full grid place-items-center">
-          <Button />
+          <Boton />
         </div>
       </div>
-      <div class="flex justify-center items-center">
+      <div class="flex justify-center items-center lg:order-2">
         <img
-          class="w-full object-cover drop-shadow-xl/75"
+          class="max-h-[500px] object-contain drop-shadow-xl/75"
           src="/images/compu2.avif"
           alt="Hero Image"
         />
       </div>
     </div>
-  </div>
-</Container>
+  </Container>
+</section>
