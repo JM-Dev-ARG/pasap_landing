@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pasap-green-1: #00ff00;
+  --color-pasap-green-2: #00c105;
+  --color-pasap-green-3: #0e7200;
+  --color-suplementary-1: #006867;
+  --color-suplementary-12: #d8db3d;
+  --color-suplementary-2: #435ea7;
+  --color-suplementary-22: #a2d2bc;
+  --color-suplementary-3: #ee791b;
+  --color-suplementary-32: #f9b214;
+  --color-suplementary-4: #b98dbf;
+  --color-suplementary-42: #f7ede1;
+  --font-title: "Oswald", sans-serif;
+  --font-body: "GillSans", sans-serif;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("/fonts/Oswald-VariableFont_wght.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/Gill-Sans-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/Gill-Sans-Medium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/Gill-Sans.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/Gill-Sans-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/Gill-Sans-Condensed.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GillSans";
+  src: url("/fonts/Gill-Sans-Condensed-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}

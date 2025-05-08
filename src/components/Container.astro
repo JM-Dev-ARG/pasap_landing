@@ -1,0 +1,18 @@
+---
+interface Props {
+  id?: string;
+  bg_color?: string;
+}
+
+const { id, bg_color } = Astro.props;
+---
+
+<section
+  id={id}
+  class="w-full py-5"
+  style={`background-color: ${bg_color}`}
+>
+  <div class="w-full max-w-6xl mx-auto overflow-hidden">
+    <slot />
+  </div>
+</section>
