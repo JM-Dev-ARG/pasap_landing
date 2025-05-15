@@ -1,0 +1,30 @@
+---
+interface Props {
+  titulo: string;
+  descripcion: string;
+  imageUrl: string;
+  reverse?: boolean;
+}
+
+const { titulo, descripcion, imageUrl, reverse } = Astro.props;
+---
+
+<div class="border-t border-t-pasap-green-2 w-[60%] mt-8"></div>
+<div
+  class={reverse
+    ? "flex flex-col lg:flex-row-reverse justify-center items-center gap-4 w-[90%]"
+    : "flex flex-col lg:flex-row justify-center items-center gap-4 w-[90%]"}
+>
+  <div class="w-[45%] drop-shadow-2xl drop-shadow-suplementary-1/20">
+    <img
+      src={imageUrl}
+      alt=`${titulo}`
+    />
+  </div>
+  <div class="w-[55%] grid px-6 gap-4">
+    <h3 class="font-semibold text-3xl font-title">
+      {titulo}
+    </h3>
+    <p class="text-[clamp(0.75rem,4vw,1.2rem)] text-gray-600">{descripcion}</p>
+  </div>
+</div>

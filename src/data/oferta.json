@@ -1,0 +1,20 @@
+[
+    {
+        "titulo": "Lorem ipsum dolor sit amet",
+        "descripcion": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur, quod tempore voluptas beatae architecto cupiditate. Officiis non delectus debitis tempora in, vero dolorum odio repellat ab beatae mollitia earum.",
+        "imageUrl": "/images/oferta1.avif",
+        "reverse": false
+    },
+    {
+        "titulo": "Lorem ipsum dolor sit amet",
+        "descripcion": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur, quod tempore voluptas beatae architecto cupiditate. Officiis non delectus debitis tempora in, vero dolorum odio repellat ab beatae mollitia earum.",
+        "imageUrl": "/images/oferta2.avif",
+        "reverse": true
+    },
+    {
+        "titulo": "Lorem ipsum dolor sit amet",
+        "descripcion": " Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur, quod tempore voluptas beatae architecto cupiditate. Officiis non delectus debitis tempora in, vero dolorum odio repellat ab beatae mollitia earum.",
+        "imageUrl": "/images/libro.avif",
+        "reverse": false
+    }
+]

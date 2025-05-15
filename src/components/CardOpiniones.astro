@@ -1,0 +1,30 @@
+---
+interface Props {
+  nombre: string;
+  texto: string;
+  imagen: string;
+}
+const { nombre, texto, imagen } = Astro.props;
+---
+
+<div
+  class="flex relative flex-col items-center justify-end gap-4 size-[clamp(250px,40vw,300px)] rounded-4xl inset-shadow-sm inset-shadow-gray-400 shadow-2xl shadow-gray-400"
+>
+  <div
+    class="flex absolute justify-center items-center w-[50%] h-[50%] top-[-20%] left-[50%] translate-x-[-50%] aspect-square"
+  >
+    <img
+      src={imagen}
+      alt={`foto de ${nombre}`}
+      class="object-cover size-full object-center rounded-full"
+    />
+  </div>
+  <div class="w-full h-[70%] px-5 py-2 text-center">
+    <h4 class="text-[clamp(1.5rem,5vw,2rem)] font-semibold text-shadow-2xs">
+      {nombre}
+    </h4>
+    <p class="text-[clamp(0.75rem,4vw,1.2rem)] leading-thight">
+      "{texto}"
+    </p>
+  </div>
+</div>

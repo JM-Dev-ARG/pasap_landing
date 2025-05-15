@@ -1,0 +1,32 @@
+[
+    {
+        "numero": 1,
+        "titulo": "Card 1",
+        "texto": "This is the first card. It contains some text. You can add more details here."
+    },
+    {
+        "numero": 2,
+        "titulo": "Card 2",
+        "texto": "This is the second card. It contains some text. You can add more details here."
+    },
+    {
+        "numero": 3,
+        "titulo": "Card 3",
+        "texto": "This is the third card. It contains some text. You can add more details here."
+    },
+    {
+        "numero": 4,
+        "titulo": "Card 4",
+        "texto": "This is the fourth card. It contains some text. You can add more details here."
+    },
+    {
+        "numero": 5,
+        "titulo": "Card 5",
+        "texto": "This is the fifth card. It contains some text. You can add more details here."
+    },
+    {
+        "numero": 6,
+        "titulo": "Card 6",
+        "texto": "This is the sixth card. It contains some text. You can add more details here."
+    }
+]

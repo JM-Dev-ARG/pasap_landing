@@ -1,8 +1,13 @@
 ---
-
+interface Props {
+  bg_color?: string;
+}
+const { bg_color } = Astro.props as Props;
 ---
 
-<div class="w-full py-4">
+<div
+  class={bg_color ? `w-full pb-16 pt-8 bg-${bg_color}` : "w-full pb-16 pt-8"}
+>
   <div class="w-full max-w-6xl mx-auto">
     <div class="w-full
     grid

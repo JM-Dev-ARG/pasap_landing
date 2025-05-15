@@ -1,0 +1,36 @@
+---
+interface Props {
+  pregunta: string;
+  respuesta: string;
+}
+const { pregunta, respuesta } = Astro.props;
+
+const separador = "<#FIN_DE_FRASE#>";
+const respuestaConMarcadores = respuesta.replace(/\./g, "." + separador);
+const frasesConPunto = respuestaConMarcadores.split(separador);
+const parrafos = frasesConPunto
+  .map((frase) => frase.trim())
+  .filter((frase) => frase.length > 0);
+---
+
+<div
+  class="bg-pasap-green-2/10 shadow-xl shadow-pasap-green-3/20 p-4 rounded-lg text-gray-800 text-shadow-sm mb-4 break-inside-avoid-column relative z-10"
+>
+  <div
+    class="w-full h-full relative before:absolute before:top-0 before:left-0 before:size-full before:bg-[url('/images/preguntas.avif')] before:bg-contain before:bg-center before:bg-no-repeat before:-z-10 before:opacity-20"
+  >
+    <h3 class="text-[clamp(1.1rem,3.5vw,1.6rem)] font-semibold">
+      {pregunta}
+    </h3>
+    <div class="leading-tight">
+      {
+        // Mapeamos el array de frases (parrafos) a elementos <p>
+        // Añadimos una key única para ayudar a Astro/el navegador a renderizar eficientemente la lista.
+        parrafos.map((parrafo) => (
+          // Aplicamos las clases de estilo que tenías en el <p> original
+          <p class="mt-1 text-[clamp(0.8rem,3.5vw,1.2rem)] ">{parrafo}</p>
+        ))
+      }
+    </div>
+  </div>
+</div>

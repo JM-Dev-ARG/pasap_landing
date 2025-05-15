@@ -1,0 +1,28 @@
+---
+import CardPreguntas from "../components/CardPreguntas.astro";
+import Container from "../components/Container.astro";
+import Subtitulo from "../components/Subtitulo.astro";
+import Titulos from "../components/Titulos.astro";
+import data from "../data/cardPreguntas.json";
+---
+
+<section id="preguntas-frecuentes">
+  <Container>
+    <Titulos
+      texto_1="¿Tenes Dudas?"
+      texto_2="¡Estamos para ayudarte!"
+    />
+    <Subtitulo texto_1="Aca te dejamos algunas preguntas frecuentes" />
+
+    <div class="columns-md gap-6 mt-4 px-5">
+      {
+        data.map((item) => (
+          <CardPreguntas
+            pregunta={item.pregunta}
+            respuesta={item.respuesta}
+          />
+        ))
+      }
+    </div>
+  </Container>
+</section>

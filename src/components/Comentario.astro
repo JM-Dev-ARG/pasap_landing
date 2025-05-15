@@ -1,0 +1,31 @@
+---
+interface Props {
+  texto?: string;
+  texto_color?: string;
+}
+const { texto, texto_color } = Astro.props;
+---
+
+<div
+  class="flex justify-center items-center bg-suplementary-22/15 w-[70%] h-[200px] rounded-4xl px-6 py-2 p gap-4 shadow-xl"
+>
+  <div class="hidden w-[30%] h-[80%] lg:flex items-start justify-center">
+    <img
+      class="h-[60%] opacity-80"
+      src="/images/comillas.avif"
+      alt=""
+    />
+  </div>
+
+  <p
+    class={texto_color
+      ? `text-${texto_color} text-pretty text-[clamp(0.75rem,3vw,1.5rem)] text-center italic`
+      : "text-gray-800 text-pretty text-[clamp(0.75rem,3vw,1.5rem)] text-center italic"}
+  >
+    {
+      texto
+        ? texto
+        : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam repellendus corporis aperiam cupiditate quos accusantium recusandae, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique veritatis,"
+    }
+  </p>
+</div>

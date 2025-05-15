@@ -1,0 +1,36 @@
+---
+import Container from "../components/Container.astro";
+import Titulos from "../components/Titulos.astro";
+import Carrousel from "../components/Carrousel.astro";
+import Subtitulo from "../components/Subtitulo.astro";
+import Boton from "../components/Boton.astro";
+import data from "../data/opiniones.json";
+import CardOpiniones from "../components/CardOpiniones.astro";
+---
+
+<section id="opiniones">
+  <Container>
+    <Titulos texto_1="Lo que dicen nuestros usuarios" />
+
+    <Carrousel
+      duration="slow"
+      classSlider="gap-8"
+    >
+      {
+        data.map((item) => (
+          <CardOpiniones
+            nombre={item.nombre}
+            texto={item.texto}
+            imagen={item.imagen}
+          />
+        ))
+      }
+    </Carrousel>
+
+    <Subtitulo
+      texto_1="Se uno mas que da su opinión"
+      texto_2="Sumate"
+    />
+    <Boton texto="QUIERO EMPEZAR A TRABAJAR CON PASAP" />
+  </Container>
+</section>

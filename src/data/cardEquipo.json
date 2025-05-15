@@ -1,0 +1,32 @@
+[
+    {
+        "nombre": "Jhon Doe1",
+        "puesto": "Desarrollador Frontend",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Jhon Doe2",
+        "puesto": "Desarrollador Frontend",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Jhon Doe3",
+        "puesto": "Desarrollador Frontend",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Jhon Doe4",
+        "puesto": "Desarrollador Frontend",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Jhon Doe5",
+        "puesto": "Desarrollador Frontend",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Jhon Doe6",
+        "puesto": "Desarrollador Frontend",
+        "imagen": "/images/img-hola.avif"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Paso 1",
+        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "imagen": "../images/label1.avif",
+        "bg_color": "#006867"
+    },
+    {
+        "id": 2,
+        "nombre": "Paso 2",
+        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "imagen": "../images/label2.avif",
+        "bg_color": "#d8db3d"
+    },
+    {
+        "id": 3,
+        "nombre": "Paso 3",
+        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "imagen": "../images/label3.avif",
+        "bg_color": "#ee791b"
+    },
+    {
+        "id": 4,
+        "nombre": "Paso 4",
+        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "imagen": "../images/label4.avif",
+        "bg_color": "#b98dbf"
+    }
+]

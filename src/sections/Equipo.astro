@@ -1,0 +1,71 @@
+---
+import Container from "../components/Container.astro";
+import Parrafo from "../components/Parrafo.astro";
+import Titulos from "../components/Titulos.astro";
+import dataTexto from "../data/textoEquipo.json";
+import dataImagenes from "../data/cardEquipo.json";
+import CardEquipo from "../components/CardEquipo.astro";
+---
+
+<section
+  id="equipo"
+  class="grid place-items-center relative before:content-[''] before:absolute before:top-[50%] before:translate-y-[-50%] before:left-[50%] before:translate-x-[-50%] before:size-[80%] before:bg-[url('/images/logotipo_sf.avif')] before:bg-contain before:bg-no-repeat before:bg-center before:-z-10 before:opacity-40"
+>
+  <div
+    class="w-[90%] h-full bg-suplementary-1/80 rounded-[60px] shadow-2xl shadow-black/70 backdrop-blur-xs"
+  >
+    <Container>
+      <Titulos
+        texto_color="gray-50"
+        texto_1="Conoce al equipo de PASAP"
+      />
+
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="grid place-items-center p-6 text-gray-50 h-full">
+          <div
+            class="w-full h-full flex flex-col justify-center items-center gap-4"
+          >
+            {dataTexto.map((item) => <Parrafo texto={item.texto} />)}
+          </div>
+        </div>
+        <div
+          class="hidden lg:grid grid-cols-2 place-items-center gap-2 text-gray-50 py-6"
+        >
+          <div class="w-full h-full flex flex-col gap-2">
+            {
+              dataImagenes.map((item, index) => {
+                if (index < 3) {
+                  return (
+                    <CardEquipo
+                      nombre={item.nombre}
+                      puesto={item.puesto}
+                      imagen={item.imagen}
+                    />
+                  );
+                }
+              })
+            }
+          </div>
+          <div class="w-full h-full flex flex-col gap-2">
+            {
+              dataImagenes.map((item, index) => {
+                if (index >= 3) {
+                  return (
+                    <CardEquipo
+                      nombre={item.nombre}
+                      puesto={item.puesto}
+                      imagen={item.imagen}
+                    />
+                  );
+                }
+              })
+            }
+          </div>
+        </div>
+      </div>
+    </Container>
+  </div>
+
+  <!-- 
+   -->
+</section>

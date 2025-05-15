@@ -1,0 +1,47 @@
+[
+    {
+        "nombre": "Juan Pérez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Maria Gomez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Pedro Rodriguez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Juan Pérez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Maria Gomez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Pedro Rodriguez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Juan Pérez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Maria Gomez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    },
+    {
+        "nombre": "Pedro Rodriguez",
+        "texto": "El producto es excelente, lo recomiendo mucho.",
+        "imagen": "/images/img-hola.avif"
+    }
+]

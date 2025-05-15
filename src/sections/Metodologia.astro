@@ -1,0 +1,38 @@
+---
+import CardPasos from "../components/CardPasos.astro";
+import Comentario from "../components/Comentario.astro";
+import Container from "../components/Container.astro";
+import Subtitulo from "../components/Subtitulo.astro";
+import Titulos from "../components/Titulos.astro";
+import data from "../data/pasos.json";
+---
+
+<section id="metodologia">
+  <Container>
+    <Titulos
+      texto_1="Metodología"
+      texto_2="¿Cómo lo hacemos?"
+    />
+
+    <Subtitulo
+      texto_1="La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil, lo que nos permite adaptarnos a los cambios y necesidades del cliente de manera rápida y eficiente."
+    />
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-items-center w-full gap-6 px-4 lg:h-[500px] my-6"
+    >
+      {
+        data.map((item) => (
+          <CardPasos
+            nombre={item.nombre}
+            description={item.descripcion}
+            imagen={item.imagen}
+            bg_color={item.bg_color}
+            id={item.id}
+          />
+        ))
+      }
+    </div>
+    <Comentario />
+  </Container>
+</section>

@@ -1,0 +1,44 @@
+---
+import Boton from "../components/Boton.astro";
+import CardOferta from "../components/CardOferta.astro";
+import Container from "../components/Container.astro";
+import Subtitulo from "../components/Subtitulo.astro";
+import Titulos from "../components/Titulos.astro";
+import data from "../data/oferta.json";
+---
+
+<section id="oferta">
+  <Container>
+    <Titulos
+      texto_color="gray-900"
+      texto_1="Que tiene PASAP para ofrecerte"
+    />
+    <Subtitulo
+      texto_1="Lorem ipsum dolor sit amet consectetur adipisicing elit. "
+    />
+
+    {
+      data.map((item) => (
+        <CardOferta
+          titulo={item.titulo}
+          descripcion={item.descripcion}
+          imageUrl={item.imageUrl}
+          reverse={item.reverse}
+        />
+      ))
+    }
+    <div class="border-t border-t-pasap-green-2 w-[60%] mt-8"></div>
+
+    <div class="w-[90%] flex flex-col items-center gap-2">
+      <h3 class="font-semibold text-3xl">
+        ¿Quieres empezar a trabajar con nosotros?
+      </h3>
+      <p class="text-[clamp(0.75rem,4vw,1.2rem)] text-gray-800 text-center">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem
+        aperiam veniam consequatur quasi omnis iste at a ut ex? Magnam quod
+      </p>
+    </div>
+
+    <Boton texto="QUIERO EMPEZAR A TRABAJAR CON PASAP" />
+  </Container>
+</section>

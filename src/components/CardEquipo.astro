@@ -1,0 +1,20 @@
+---
+interface Props {
+  nombre: string;
+  puesto: string;
+  imagen: string;
+}
+const { nombre, puesto, imagen } = Astro.props as Props;
+---
+
+<div class="b w-full h-full grid place-items-center p-2">
+  <img
+    src={imagen}
+    alt=`foto de ${nombre}`
+    class="w-[80%] object-cover object-[0%_12%] grayscale hover:grayscale-0 transition-all duration-200 ease-linear aspect-square rounded-full drop-shadow-2xl"
+  />
+  <h4 class="text-[clamp(1rem,5vw,1.5rem)] font-semibold text-shadow-2xs">
+    {nombre}
+  </h4>
+  <p>{puesto}</p>
+</div>

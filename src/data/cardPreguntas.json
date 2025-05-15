@@ -1,0 +1,38 @@
+[
+    {
+        "pregunta": "¿Qué es un sistema de gestión de calidad?",
+        "respuesta": "Un sistema de gestión de calidad es un conjunto de políticas, procesos y procedimientos necesarios para planificar y ejecutar (producción/desarrollo/servicio) en el núcleo de una organización.Los objetivos de un sistema de gestión de calidad son la mejora continua y el incremento de la calidad de los productos y servicios ofrecidos."
+    },
+    {
+        "pregunta": "¿Cuáles son los objetivos de un sistema de gestión de calidad?",
+        "respuesta": "Los objetivos de un sistema de gestión de calidad son la mejora continua y el incremento de la calidad de los productos y servicios ofrecidos.Los objetivos de un sistema de gestión de calidad son la mejora continua y el incremento de la calidad de los productos y servicios ofrecidos."
+    },
+    {
+        "pregunta": "¿Cuáles son las características de un sistema de gestión de calidad?",
+        "respuesta": "Los sistemas de gestión de calidad son un conjunto de herramientas y procesos que permiten mejorar la calidad de los productos y servicios ofrecidos."
+    },
+    {
+        "pregunta": "¿Cuáles son los beneficios de un sistema de gestión de calidad?",
+        "respuesta": "Los beneficios de un sistema de gestión de calidad son la mejora continua y el incremento de la calidad de los productos y servicios ofrecidos."
+    },
+    {
+        "pregunta": "¿Cuáles son los principios de un sistema de gestión de calidad?",
+        "respuesta": "Los principios de un sistema de gestión de calidad son la orientación al cliente, el liderazgo, la participación del personal, el enfoque basado en procesos, la mejora continua, el enfoque basado en hechos para la toma de decisiones y las relaciones mutuamente beneficiosas con el proveedor."
+    },
+    {
+        "pregunta": "¿Qué es la norma ISO 9001?",
+        "respuesta": "La norma ISO 9001 es una norma internacional que establece los requisitos para un sistema de gestión de calidad."
+    },
+    {
+        "pregunta": "¿Qué es la norma ISO 14001?",
+        "respuesta": "La norma ISO 14001 es una norma internacional que establece los requisitos para un sistema de gestión ambiental."
+    },
+    {
+        "pregunta": "¿Qué es la norma ISO 45001?",
+        "respuesta": "La norma ISO 45001 es una norma internacional que establece los requisitos para un sistema de gestión de la seguridad y salud en el trabajo."
+    },
+    {
+        "pregunta": "¿Qué es la norma ISO 50001?",
+        "respuesta": "La norma ISO 50001 es una norma internacional que establece los requisitos para un sistema de gestión de la energía."
+    }
+]
