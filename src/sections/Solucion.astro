@@ -1,7 +1,7 @@
 ---
 import Boton from "../components/Boton.astro";
 import CardSoluciones from "../components/CardSoluciones.astro";
-import Comentario from "../components/Comentario.astro";
+
 import Container from "../components/Container.astro";
 import Subtitulo from "../components/Subtitulo.astro";
 import Titulos from "../components/Titulos.astro";
@@ -10,16 +10,13 @@ import data from "../data/solucion.json";
 
 <section id="solucion">
   <Container>
-    <Titulos
-      texto_1="Potencia tu liderazgo creativo y obtén"
-      texto_2="Porro aliquam dolorum id rerum"
-    />
+    <Titulos texto_1="Transformamos la manera de asegurar" />
     <Subtitulo
       texto_color="#f4f4f4"
-      texto_1="lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam voluptatibus"
+      texto_1="Sin papeles 🧻, sin vueltas 🔄️, sin limites 🚀"
     />
     <div
-      class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center w-full px-4"
+      class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-2 place-items-center w-full px-4 mt-6"
     >
       {
         data.map((item) => (
@@ -31,7 +28,7 @@ import data from "../data/solucion.json";
         ))
       }
     </div>
-    <Comentario />
-    <Boton texto="¿COMENZAMOS?" />
+
+    <Boton texto="¡COMENZÁ HOY!" />
   </Container>
 </section>
