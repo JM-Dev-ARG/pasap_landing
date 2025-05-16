@@ -1,15 +1,15 @@
 ---
 interface Props {
-  href?: string;
   title?: string;
 
   texto?: string;
 }
 
-const { texto, href, title } = Astro.props;
+const { texto, title } = Astro.props;
 ---
 
 <a
+  id="os-info"
   href=""
   target="_blank"
   title="boton de solucitud de servicio"
@@ -18,3 +18,31 @@ const { texto, href, title } = Astro.props;
 >
   {texto ? texto : "QUIERO EMPEZAR A TRABAJAR CON PASAP"}
 </a>
+
+<script is:inline>
+  // La función getOperatingSystem debe estar disponible aquí,
+  // puedes copiarla directamente o importarla si usas ESM en el cliente.
+
+  function getOperatingSystem() {
+    const userAgent = navigator.userAgent;
+
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+      return "www./google.com";
+    }
+    if (/Android/.test(userAgent)) {
+      return "www.youtube.com";
+    }
+    return "www.facebook.com";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const os = getOperatingSystem();
+
+    const osInfoElement = document.getElementById("os-info");
+
+    if (osInfoElement) {
+      console.log(os);
+      osInfoElement.setAttribute("href", os);
+    }
+  });
+</script>
