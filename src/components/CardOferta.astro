@@ -22,7 +22,9 @@ const { titulo, descripcion, imageUrl, reverse } = Astro.props;
     />
   </div>
   <div class="w-[90%] lg:w-[55%] grid px-6 gap-4">
-    <h3 class="font-semibold text-3xl font-title">
+    <h3
+      class="font-light text-4xl font-title border-b-2 border-b-suplementary-3 pb-2 w-fit"
+    >
       {titulo}
     </h3>
     <p class="text-[clamp(0.75rem,4vw,1.2rem)] text-gray-600">{descripcion}</p>

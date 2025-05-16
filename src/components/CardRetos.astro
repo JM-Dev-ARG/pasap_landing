@@ -1,0 +1,16 @@
+---
+interface Props {
+  titulo: string;
+  texto: string;
+}
+const { titulo, texto } = Astro.props;
+---
+
+<div class="flex gap-2 items-top text-left text-[clamp(0.75rem,4vw,1.2rem)]">
+  <img
+    class="size-6 mt-2"
+    src="/images/flecha.avif"
+    alt=""
+  />
+  <span> <strong class="font-semibold text-xl">{titulo} </strong>{texto}</span>
+</div>

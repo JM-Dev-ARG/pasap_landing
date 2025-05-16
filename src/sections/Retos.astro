@@ -4,6 +4,8 @@ import Container from "../components/Container.astro";
 import Titulos from "../components/Titulos.astro";
 import Boton from "../components/Boton.astro";
 import Comentario from "../components/Comentario.astro";
+import data from "../data/cardRetos.json";
+import CardRetos from "../components/cardRetos.astro";
 ---
 
 <section
@@ -26,51 +28,14 @@ import Comentario from "../components/Comentario.astro";
             aliquam dolorum id rerum earum impedit nobis vitae odio
           </span>
 
-          <div
-            class="flex gap-2 items-top text-left text-[clamp(0.75rem,4vw,1.2rem)]"
-          >
-            <img
-              class="size-6 mt-2"
-              src="/images/flecha.avif"
-              alt=""
-            />
-            <span>
-              <strong class="font-semibold text-xl"
-                >Gestión ordenda
-              </strong>adipisicing elit. Porro aliquam dolorum id rerum earum
-              impedit nobis vitae odio</span
-            >
-          </div>
-          <div
-            class="flex gap-2 items-top text-left text-[clamp(0.75rem,4vw,1.2rem)]"
-          >
-            <img
-              class="size-6 mt-2"
-              src="/images/flecha.avif"
-              alt=""
-            />
-            <span>
-              <strong class="font-semibold"
-                >Lorem ipsum dolor sit amet consectetur
-              </strong>adipisicing elit. Porro aliquam dolorum id rerum earum
-              impedit nobis vitae odio</span
-            >
-          </div>
-          <div
-            class="flex gap-2 items-top text-left text-[clamp(0.75rem,4vw,1.2rem)]"
-          >
-            <img
-              class="size-6 mt-2"
-              src="/images/flecha.avif"
-              alt=""
-            />
-            <span>
-              <strong class="font-semibold"
-                >Lorem ipsum dolor sit amet consectetur
-              </strong>adipisicing elit. Porro aliquam dolorum id rerum earum
-              impedit nobis vitae odio</span
-            >
-          </div>
+          {
+            data.map((item) => (
+              <CardRetos
+                titulo={item.titulo}
+                texto={item.texto}
+              />
+            ))
+          }
         </div>
       </div>
       <div class="flex justify-center items-center lg:order-2 drop-shadow-2xl">
