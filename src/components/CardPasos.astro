@@ -16,7 +16,7 @@ const { nombre, description, imagen, bg_color, id } = Astro.props;
     style={`background-image: url(${imagen})`}
   >
     <p
-      class="text-[clamp(4.75rem,3vw,5.5rem)] font-semibold text-gray-50 font-title py-10"
+      class=" text-[clamp(4.75rem,3vw,5.5rem)] font-semibold text-gray-50 font-title py-10"
     >
       {id}
     </p>
@@ -27,7 +27,7 @@ const { nombre, description, imagen, bg_color, id } = Astro.props;
   >
     {nombre}
   </div>
-  <p class="text-[clamp(1rem,3vw,1.5rem)] text-gray-900 text-left text-pretty">
+  <p class=" w-[60%] lg:w-full text-[clamp(1rem,3vw,1.5rem)] text-gray-900 text-left text-pretty">
     {description}
   </p>
 </div>

@@ -15,13 +15,13 @@ const { titulo, descripcion, imageUrl, reverse } = Astro.props;
     ? "flex flex-col lg:flex-row-reverse justify-center items-center gap-4 w-[90%]"
     : "flex flex-col lg:flex-row justify-center items-center gap-4 w-[90%]"}
 >
-  <div class="w-[45%] drop-shadow-2xl drop-shadow-suplementary-1/20">
+  <div class="w-[80%] lg:w-[45%] drop-shadow-2xl drop-shadow-suplementary-1/20">
     <img
       src={imageUrl}
       alt=`${titulo}`
     />
   </div>
-  <div class="w-[55%] grid px-6 gap-4">
+  <div class="w-[90%] lg:w-[55%] grid px-6 gap-4">
     <h3 class="font-semibold text-3xl font-title">
       {titulo}
     </h3>
