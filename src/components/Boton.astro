@@ -27,12 +27,12 @@ const { texto, title } = Astro.props;
     const userAgent = navigator.userAgent;
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      return "www./google.com";
+      return www.google.com;
     }
     if (/Android/.test(userAgent)) {
-      return "www.youtube.com";
+      return "https://play.google.com/store/apps/details?id=ar.com.pasap";
     }
-    return "www.facebook.com";
+    return "https://www.youtube.com/";
   }
 
   document.addEventListener("DOMContentLoaded", () => {
@@ -42,7 +42,7 @@ const { texto, title } = Astro.props;
 
     if (osInfoElement) {
       console.log(os);
-      osInfoElement.setAttribute("href", os);
+      osInfoElement.setAttribute("href", `${os}`);
     }
   });
 </script>
