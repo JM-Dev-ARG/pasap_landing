@@ -27,12 +27,12 @@ const { texto, title } = Astro.props;
     const userAgent = navigator.userAgent;
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      return www.google.com;
+      return "https://apps.apple.com/us/app/pasap/id1513244843";
     }
     if (/Android/.test(userAgent)) {
       return "https://play.google.com/store/apps/details?id=ar.com.pasap";
     }
-    return "https://www.youtube.com/";
+    return "https://app.pasap.com.ar/registro";
   }
 
   document.addEventListener("DOMContentLoaded", () => {
