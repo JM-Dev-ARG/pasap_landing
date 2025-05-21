@@ -1,29 +1,29 @@
 [
     {
         "id": 1,
-        "nombre": "Paso 1",
-        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "nombre": "Bienvenida",
+        "descripcion": "Descarga la app de Pasap en tu celular o tablet para poder registrarte y comenzar a utilizarlas. Sin cargo para todos los PAS del país.",
         "imagen": "../images/label1.avif",
         "bg_color": "#006867"
     },
     {
         "id": 2,
-        "nombre": "Paso 2",
-        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "nombre": "Planificación",
+        "descripcion": "Conocerás a nuestro equipo de trabajo y diseñamos un plan personalizado para tu crecimiento profesional basado en tu localización, riesgos administrados y objetivos particulares.",
         "imagen": "../images/label2.avif",
         "bg_color": "#d8db3d"
     },
     {
         "id": 3,
-        "nombre": "Paso 3",
-        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "nombre": "Crecimiento",
+        "descripcion": "acompañaremos tu desarrollo maximizando los rendimientos de tu cartera actual y colaborando con la prospección de nuevos asegurados.",
         "imagen": "../images/label3.avif",
         "bg_color": "#ee791b"
     },
     {
         "id": 4,
-        "nombre": "Paso 4",
-        "descripcion": "La metodología de trabajo que seguimos en el desarrollo de nuestros proyectos es ágil",
+        "nombre": "Comunidad",
+        "descripcion": "te convertirás en un Asesor Digital de Seguros capaz de administrar y comercializar seguros en todo el país y serás miembro de la comunidad Pasaper con acceso a capacitaciones y eventos exclusivos.",
         "imagen": "../images/label4.avif",
         "bg_color": "#b98dbf"
     }

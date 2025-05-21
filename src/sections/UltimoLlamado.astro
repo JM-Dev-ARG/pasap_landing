@@ -14,13 +14,17 @@ import Container from "../components/Container.astro";
           <span
             class="text-[clamp(1.6rem,5vw,2rem)] leading-tight font-semibold text-center lg:text-left text-pretty"
           >
-            Convertite en un Productor de seguros 100% digital
+          Activate con Pasap 
+
           </span>
           <span
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            aliquam dolorum id rerum earum impedit nobis vitae odio eveniet
-            reprehenderit nisi</span
+            >Podes conquistar el mercado de seguros digitales sumandote al equipo que lo tiene todo:</span
           >
+          <ul class="text-[clamp(1rem,5vw,1.5rem)] list-inside ">
+            <li >Tecnología</li>
+            <li>Experiencia</li>
+            <li>Comunicación</li>
+          </ul>
         </p>
         <div class="mt-4 w-full grid place-items-center">
           <Boton texto="QUIERO SUMARME A PASAP" />
@@ -38,3 +42,10 @@ import Container from "../components/Container.astro";
     </div>
   </Container>
 </section>
+
+
+<style>
+  li::marker{
+  content: "✔️";
+  }
+</style>

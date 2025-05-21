@@ -1,48 +1,45 @@
 ---
 interface Props {
-  title?: string;
-
   texto?: string;
 }
 
-const { texto, title } = Astro.props;
+const { texto} = Astro.props;
+
 ---
 
 <a
-  id="os-info"
   href=""
   target="_blank"
   title="boton de solucitud de servicio"
   aria-label="boton de solucitud de servicio"
-  class="bg-pasap-green-2/80 text-gray-50 font-semibold py-6 px-7 rounded-full hover:bg-pasap-green-1/80 transition-all duration-300 ease-in-out text-[clamp(0.75rem,3.5vw,1.5rem)] shadow-md shadow-pasap-green-2/70 hover:shadow-none hover:text-gray-900"
+  class="bg-pasap-green-2/80 text-gray-50 font-semibold py-6 px-7 rounded-full hover:bg-pasap-green-1/80 transition-all duration-300 ease-in-out text-[clamp(0.75rem,3.5vw,1.5rem)] shadow-md shadow-pasap-green-2/70 hover:shadow-none hover:text-gray-900 text-center text-pretty uppercase"
 >
   {texto ? texto : "QUIERO EMPEZAR A TRABAJAR CON PASAP"}
 </a>
 
 <script is:inline>
-  // La función getOperatingSystem debe estar disponible aquí,
-  // puedes copiarla directamente o importarla si usas ESM en el cliente.
+  (function() {
+    const scriptTag = document.currentScript;
+    // Esto asume que la etiqueta <a> está JUSTO ANTES de esta etiqueta <script>
+    const anchorElement = scriptTag.previousElementSibling;
 
-  function getOperatingSystem() {
-    const userAgent = navigator.userAgent;
-
-    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-      return "https://apps.apple.com/us/app/pasap/id1513244843";
+    if (!anchorElement || anchorElement.tagName !== 'A') {
+      console.warn('PASAP Component Script: No se encontró la etiqueta <a> precedente. Verifica la estructura.', scriptTag);
+      return; 
     }
-    if (/Android/.test(userAgent)) {
-      return "https://play.google.com/store/apps/details?id=ar.com.pasap";
+
+    function getOperatingSystem() {
+      const userAgent = navigator.userAgent;
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        return "https://apps.apple.com/us/app/pasap/id1513244843";
+      }
+      if (/Android/.test(userAgent)) {
+        return "https://play.google.com/store/apps/details?id=ar.com.pasap";
+      }
+      return "https://app.pasap.com.ar/registro";
     }
-    return "https://app.pasap.com.ar/registro";
-  }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const os = getOperatingSystem();
-
-    const osInfoElement = document.getElementById("os-info");
-
-    if (osInfoElement) {
-      console.log(os);
-      osInfoElement.setAttribute("href", `${os}`);
-    }
-  });
+    const osLink = getOperatingSystem();
+    anchorElement.setAttribute("href", osLink);
+  })();
 </script>
