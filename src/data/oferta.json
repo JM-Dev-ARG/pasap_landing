@@ -2,7 +2,7 @@
     {
         "titulo": "APP",
         "descripcion": "Desarrollamos una aplicación moderna e intuitiva capaz de gestionar un negocio de seguros en un celular o tablet. Con funcionalidades, herramientas y recursos que te otorgan libertad de acción y soporte integral en tu trabajo diario como productor.",
-        "imageUrl": "/images/oferta2.avif",
+        "imageUrl": "/images/oferta-plataforma.avif",
         "reverse": false
     },
     {
@@ -14,7 +14,8 @@
     {
         "titulo": "Comunidad",
         "descripcion": "Formamos un grupo de asesores de seguros comprometidos con la calidad de servicio al asegurado, recibiendo capacitación y formaciones en áreas claves para escalar sus negocios particulares mientras comparten sus experiencias entre colegas y compañeros.",
-        "imageUrl": "/images/libro.avif",
-        "reverse": false
+        "imageUrl": "/images/oferta-comunidad.avif",
+        "reverse": false,
+        "rounded": true
     }
 ]
