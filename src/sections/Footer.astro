@@ -1,5 +1,9 @@
 ---
 import Container from "../components/Container.astro";
+import Facebook from "../components/svg/Facebook.astro";
+import Instagram from "../components/svg/Instagram.astro";
+import Linkedin from "../components/svg/Linkedin.astro";
+
 ---
 
 <footer
@@ -17,10 +21,17 @@ import Container from "../components/Container.astro";
 
       <p class="text-center text-lg grid gap-2 text-gray-800">
         <span>Todos los derechos reservados © Pasap</span>
-        <span
-          >Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-          aliquam dolorum id rerum earum impedit nobis vitae odio eveniet
-          reprehenderit nisi</span
+        <div class="flex justify-center items-center gap-2">
+          <a href="https://www.facebook.com/pasap.seguros" target="_blank"  >
+            <Facebook />           
+          </a>
+          <a href="https://www.instagram.com/pasap.seguros/#" target="_blank">
+            <Instagram/>
+          </a>  
+          <a href=" https://www.linkedin.com/company/pasap" target="_blank">
+            <Linkedin />           
+          </a>
+          </div
         >
       </p>
     </div>

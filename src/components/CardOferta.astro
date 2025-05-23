@@ -19,8 +19,8 @@ const { titulo, descripcion, imageUrl, reverse, rounded } = Astro.props;
     : "flex flex-col lg:flex-row justify-center items-center gap-4 w-[90%]"}
 >
   <div class={rounded 
-  ? "w-[80%] lg:w-[45%] drop-shadow-2xl drop-shadow-suplementary-1/20 rounded-full object-cover overflow-hidden" 
-  : "w-[80%] lg:w-[45%] drop-shadow-2xl drop-shadow-suplementary-1/20"}>
+  ? "w-[55%] lg:w-[30%] drop-shadow-2xl drop-shadow-suplementary-1/20 rounded-full object-cover overflow-hidden" 
+  : "w-[60%] lg:w-[35%] drop-shadow-2xl drop-shadow-suplementary-1/20 object-cover"}>
     <img
       src={imageUrl}
       alt=`${titulo}`
