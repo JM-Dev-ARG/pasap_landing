@@ -2,29 +2,21 @@
 interface Props {
   nombre: string;
   texto: string;
-  imagen: string;
 }
-const { nombre, texto, imagen } = Astro.props;
+const { nombre, texto } = Astro.props;
 ---
 
 <div
-  class="flex relative flex-col items-center justify-end gap-4 size-[clamp(250px,40vw,300px)] rounded-4xl inset-shadow-sm inset-shadow-gray-400 shadow-2xl shadow-gray-400"
+  class="inset-shadow-sm inset-shadow-gray-500/60 bg-gray-200/10 p-4 rounded-lg text-gray-800 text-shadow-sm  break-inside-avoid-column relative z-10 h-[150px] md:h-[180px] lg:h-[200px] max-w-[30px]"
 >
   <div
-    class="flex absolute justify-center items-center w-[50%] h-[50%] top-[-20%] left-[50%] translate-x-[-50%] aspect-square"
+    class="w-full h-full relative before:absolute before:top-0 before:left-0 before:size-full before:bg-[url('/images/comillas.avif')] before:bg-contain before:bg-center before:bg-no-repeat before:-z-10 before:opacity-20 flex flex-col justify-center items-start gap-2"
   >
-    <img
-      src={imagen}
-      alt={`foto de ${nombre}`}
-      class="object-cover size-full object-center rounded-full"
-    />
-  </div>
-  <div class="w-full h-[70%] px-5 py-2 text-center">
-    <h4 class="text-[clamp(1.5rem,5vw,2rem)] font-semibold text-shadow-2xs">
+    <h3 class="text-[clamp(1rem,3.5vw,1.4rem)] font-semibold">
       {nombre}
-    </h4>
-    <p class="text-[clamp(0.75rem,4vw,1.2rem)] leading-thight">
+    </h3>
+    <div class="leading-tight text-[clamp(0.8rem,3.5vw,1.1rem)]">
       "{texto}"
-    </p>
+    </div>
   </div>
 </div>

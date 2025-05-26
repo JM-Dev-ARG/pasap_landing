@@ -42,7 +42,7 @@ import data from "../data/cardRetos.json"
       </div>
       <div class="flex justify-center items-center lg:order-2 drop-shadow-2xl">
         <div
-          class="size-[calc(100%-35%)] relative before before:absolute before:top-20 before:-left-14 before:size-[35%]  before:rounded-full before:bg-[url('/svg/line-chart.svg')] before:bg-no-repeat before:bg-size-[70%] before:bg-center before:flex before:items-center before:justify-center before:z-10 after:content-[''] after:absolute after:top-40 after:-right-14 after:size-[35%]  after:rounded-full after:bg-[url('/svg/costos-chart.svg')] after:bg-no-repeat after:bg-size-[70%] after:bg-center after:flex after:items-center after:justify-center after:z-10"
+          class="size-[50%] lg:size-[calc(100%-35%)] relative retos"
         >
           <img
             src="/images/retos.avif"
@@ -52,32 +52,40 @@ import data from "../data/cardRetos.json"
         </div>
       </div>
     </div>
-    <!--  <Subtitulo
-      texto_color="gray-50"
-      texto_1=""
-    />
 
-    <div class="w-[80%]">
-      <p
-        class="text-gray-50 text-pretty text-[clamp(1rem,5vw,1.5rem)] text-center my-[1lh]"
-      >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam
-        repellendus corporis aperiam cupiditate quos accusantium recusandae,
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-        veritatis,
-      </p>
-      <p
-        class="text-gray-50 text-pretty text-[clamp(1rem,5vw,1.5rem)] text-center my-[1lh]"
-      >
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam
-        repellendus corporis aperiam cupiditate quos accusantium recusandae,
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique
-        veritatis,
-      </p>
-    </div>
-
-    <Comentario texto_color="gray-50" /> -->
-
-    <!-- <Boton texto="¡COMENZÁ HOY!" /> -->
   </Container>
 </section>
+
+
+<style>
+  .retos{
+    z-index: 1;
+  }
+  .retos::after, .retos::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    } 
+
+    .retos::after{
+      top: -5%;
+      left: -20%;
+      background-image: url(/images/retos-flechas.avif);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transform: rotate(180deg);
+    }
+
+    .retos::before{
+      z-index: -10;
+      bottom: -5%;
+      right: -15%;
+      background-image: url(/images/retos-circulo.avif);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+</style>
