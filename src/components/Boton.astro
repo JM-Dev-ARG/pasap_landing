@@ -3,8 +3,7 @@ interface Props {
   texto?: string;
 }
 
-const { texto} = Astro.props;
-
+const { texto } = Astro.props;
 ---
 
 <a
@@ -12,20 +11,36 @@ const { texto} = Astro.props;
   target="_blank"
   title="boton de solucitud de servicio"
   aria-label="boton de solucitud de servicio"
-  class="bg-pasap-green-2/80 text-gray-50 font-semibold py-6 px-7 rounded-full hover:bg-pasap-green-1/80 transition-all duration-300 ease-in-out text-[clamp(0.75rem,3.5vw,1.5rem)] shadow-md shadow-pasap-green-2/70 hover:shadow-none hover:text-gray-900 text-center text-pretty uppercase"
+  class="bg-pasap-green-2/80 font-semibold py-6 px-7 rounded-full hover:bg-pasap-green-1/80 transition-all duration-300 ease-in-out text-[clamp(0.75rem,3.5vw,1.5rem)] shadow-lg shadow-pasap-green-2/70 hover:shadow-pasap-green-2/80 hover:shadow-nonetext-gray-900 text-center text-pretty uppercase"
 >
-  {texto ? texto : "QUIERO EMPEZAR A TRABAJAR CON PASAP"}
+  {
+    texto ? (
+      texto
+    ) : (
+      <p class="text-pretty flex justify-center items-center gap-2">
+        QUIERO SUMARME A
+        <img
+          class=" h-[clamp(1.5rem,3vw,2rem)] "
+          src="/images/logo_completo.avif"
+          alt=""
+        />
+      </p>
+    )
+  }
 </a>
 
 <script is:inline>
-  (function() {
+  (function () {
     const scriptTag = document.currentScript;
     // Esto asume que la etiqueta <a> está JUSTO ANTES de esta etiqueta <script>
     const anchorElement = scriptTag.previousElementSibling;
 
-    if (!anchorElement || anchorElement.tagName !== 'A') {
-      console.warn('PASAP Component Script: No se encontró la etiqueta <a> precedente. Verifica la estructura.', scriptTag);
-      return; 
+    if (!anchorElement || anchorElement.tagName !== "A") {
+      console.warn(
+        "PASAP Component Script: No se encontró la etiqueta <a> precedente. Verifica la estructura.",
+        scriptTag
+      );
+      return;
     }
 
     function getOperatingSystem() {

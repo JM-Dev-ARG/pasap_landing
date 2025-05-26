@@ -6,15 +6,15 @@
         "reverse": false
     },
     {
-        "titulo": "Equipo de experto",
-        "descripcion": "Contamos con profesionales de amplia experiencia y conocimiento en las distintas áreas del negocio que estarán disponibles para atender solicitudes, resolver conflictos y acompañarte en cada paso <de la comercialización.",
+        "titulo": "Equipo de expertos",
+        "descripcion": "Contamos con profesionales de amplia experiencia y conocimiento en las distintas áreas del negocio que estarán disponibles para atender solicitudes, resolver conflictos y acompañarte en cada paso de la comercialización.",
         "imageUrl": "/images/oferta1.avif",
         "reverse": true
     },
     {
         "titulo": "Comunidad",
         "descripcion": "Formamos un grupo de asesores de seguros comprometidos con la calidad de servicio al asegurado, recibiendo capacitación y formaciones en áreas claves para escalar sus negocios particulares mientras comparten sus experiencias entre colegas y compañeros.",
-        "imageUrl": "/images/oferta-comunidad.avif",
+        "imageUrl": "/images/comunidad.avif",
         "reverse": false,
         "rounded": true
     }

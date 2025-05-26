@@ -5,8 +5,6 @@ import Container from "../components/Container.astro";
 import Subtitulo from "../components/Subtitulo.astro";
 import Titulos from "../components/Titulos.astro";
 import data from "../data/oferta.json";
-
-
 ---
 
 <section id="oferta">
@@ -22,7 +20,7 @@ import data from "../data/oferta.json";
     {
       data.map((item) => (
         <CardOferta
-        rounded={item.rounded}
+          rounded={item.rounded}
           titulo={item.titulo}
           descripcion={item.descripcion}
           imageUrl={item.imageUrl}
@@ -42,6 +40,6 @@ import data from "../data/oferta.json";
       </p>
     </div> -->
 
-    <Boton texto="QUIERO sumarme PASAP" />
+    <Boton />
   </Container>
 </section>

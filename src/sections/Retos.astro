@@ -5,8 +5,7 @@ import Titulos from "../components/Titulos.astro";
 import Boton from "../components/Boton.astro";
 import Comentario from "../components/Comentario.astro";
 import CardRetos from "../components/CardRetos.astro";
-import data from "../data/cardRetos.json"
-
+import data from "../data/cardRetos.json";
 ---
 
 <section
@@ -26,8 +25,9 @@ import data from "../data/cardRetos.json"
           class="text-center md:text-left text-[clamp(1rem,5vw,1.5rem)] grid gap-5 text-gray-50 text-pretty"
         >
           <span
-            >Tenés el propósito, las ganas y la energía para realizarlo, pero te enfrentas con múltiples inconvenientes a diario que te impiden avanzar: 
-
+            >Tenés el propósito, las ganas y la energía para realizarlo, pero te
+            enfrentas con múltiples inconvenientes a diario que te impiden
+            avanzar:
           </span>
 
           {
@@ -41,9 +41,7 @@ import data from "../data/cardRetos.json"
         </div>
       </div>
       <div class="flex justify-center items-center lg:order-2 drop-shadow-2xl">
-        <div
-          class="size-[50%] lg:size-[calc(100%-35%)] relative retos"
-        >
+        <div class="size-[50%] lg:size-[calc(100%-35%)] relative retos">
           <img
             src="/images/retos.avif"
             alt=""
@@ -52,40 +50,38 @@ import data from "../data/cardRetos.json"
         </div>
       </div>
     </div>
-
   </Container>
 </section>
 
-
 <style>
-  .retos{
+  .retos {
     z-index: 1;
   }
-  .retos::after, .retos::before {
+  .retos::after,
+  .retos::before {
     content: "";
     position: absolute;
     width: 50%;
     height: 50%;
-    } 
+  }
 
-    .retos::after{
-      top: -5%;
-      left: -20%;
-      background-image: url(/images/retos-flechas.avif);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      transform: rotate(180deg);
-    }
+  .retos::after {
+    top: -5%;
+    left: -20%;
+    background-image: url(/images/retos-flechas.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+  }
 
-    .retos::before{
-      z-index: -10;
-      bottom: -5%;
-      right: -15%;
-      background-image: url(/images/retos-circulo.avif);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-    }
+  .retos::before {
+    z-index: -10;
+    bottom: -5%;
+    right: -15%;
+    background-image: url(/images/retos-circulo.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 </style>
