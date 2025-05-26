@@ -7,15 +7,18 @@ const { nombre, texto } = Astro.props;
 ---
 
 <div
-  class="inset-shadow-sm inset-shadow-gray-500/60 bg-gray-200/10 p-4 rounded-lg text-gray-800 text-shadow-sm break-inside-avoid-column relative z-10 h-[150px] md:h-[180px] lg:h-[200px] max-w-[350px] shadow-lg shadow-gray-800/60 mb-5"
+  class="inset-shadow-sm inset-shadow-gray-500/60 bg-gray-200/10 p-4 rounded-lg text-gray-800 text-shadow-sm break-inside-avoid-column relative z-10
+  h-[250px] max-w-[400px] shadow-lg shadow-gray-800/60 mb-5"
 >
   <div
-    class="w-full h-full relative before:absolute before:top-0 before:left-0 before:size-full before:bg-[url('/images/comillas.avif')] before:bg-contain before:bg-center before:bg-no-repeat before:-z-10 before:opacity-20 flex flex-col justify-center items-start gap-2"
+    class="w-full h-full relative before:absolute before:top-0 before:left-0 before:size-full before:bg-[url('/images/comillas.avif')] before:bg-contain before:bg-center before:bg-no-repeat before:-z-10 before:opacity-20 flex flex-col justify-between items-start gap-2"
   >
-    <h3 class="text-[clamp(1rem,3.5vw,1.4rem)] font-semibold">
+    <h3 class="text-[clamp(1.5rem,3.5vw,2rem)] font-semibold">
       {nombre}
     </h3>
-    <div class="leading-tight text-[clamp(0.8rem,3.5vw,1.1rem)]">
+    <div
+      class="leading-tight text-[clamp(1rem,3.5vw,1.1rem)] h-full justify-start"
+    >
       "{texto}"
     </div>
   </div>
