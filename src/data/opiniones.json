@@ -1,26 +1,38 @@
 [
     {
         "nombre": "Marisa Andrea Acuña",
-        "texto": "Es una app innovadora en el mercado. Altamente recomendable por la interacción entre el equipo, el productor y asegurado. Siempre hay respuesta: las 24hs y los 365 días del año. "
+        "texto": "Es una app innovadora en el mercado. Altamente recomendable por la interacción entre el equipo, el productor y asegurado. Siempre hay respuesta: las 24hs y los 365 días del año.",
+        "matricula": "106414",
+        "localidad":"Loma Hermosa"
     },
     {
         "nombre": "Gastón González",
-        "texto": "Me dio una gran mano en lo tecnológico y tienen un equipo humano que me ayuda diariamente. Ofrecen una herramienta ágil que necesitamos los productores para trabajar."
+        "texto": "Me dio una gran mano en lo tecnológico y tienen un equipo humano que me ayuda diariamente. Ofrecen una herramienta ágil que necesitamos los productores para trabajar.",
+        "matricula": "64710",
+        "localidad": "CABA"
     },
     {
         "nombre": "Patricio Pace",
-        "texto": "Es una herramienta que se volvió esencial para trabajar, con multiples compañías, usarlo como CRM, para cotizar de forma ágil y dinámica. Recomiendo Pasap para el productor independiente que recién comienza por su herramienta y el equipo expeditivo que la acompaña. "
+        "texto": "Es una herramienta que se volvió esencial para trabajar, con multiples compañías, usarlo como CRM, para cotizar de forma ágil y dinámica. Recomiendo Pasap para el productor independiente que recién comienza por su herramienta y el equipo expeditivo que la acompaña.",
+        "matricula":"95863",
+        "localidad":"Moron"
     },
     {
         "nombre": "Diego Aguirre",
-        "texto": "Trabajo a diario con Pasap por la facilidad de uso del sistema y el acompañamiento del equipo. Lo recomiendo por su sistema dinámico y porque están evolucionando y agregando nuevas funcionalidades."
+        "texto": "Trabajo a diario con Pasap por la facilidad de uso del sistema y el acompañamiento del equipo. Lo recomiendo por su sistema dinámico y porque están evolucionando y agregando nuevas funcionalidades.",
+        "matricula":"82807",
+"localidad":"Victoria"
     },
     {
         "nombre": "Juan Manuel Bazzano",
-        "texto": "Estoy trabajando hace 3 años con Pasap, desde los inicios del proyecto. Es la perfecta combinación entre una herramienta digital y humanización. Siempre dan respuesta, de forma rápida, amena y eficiente lo que me sirve para dar un buen servicio a mis clientes. "
+        "texto": "Estoy trabajando hace 3 años con Pasap, desde los inicios del proyecto. Es la perfecta combinación entre una herramienta digital y humanización. Siempre dan respuesta, de forma rápida, amena y eficiente lo que me sirve para dar un buen servicio a mis clientes.",
+        "matricula":"94470",
+        "localidad":"Avellaneda"
     },
     {
         "nombre": "Juan Pablo Devoto",
-        "texto": "Elijo trabajar con Pasap por varios motivos. El primero es el equipo que trabaja con seriedad y responsabilidad. El segundo motivo es la herramienta digital que simplifica el trabajo diario y nos permite enfocarnos más en la parte comercial descargando en ellos las tareas administrativas. "
+        "texto": "Elijo trabajar con Pasap por varios motivos. El primero es el equipo que trabaja con seriedad y responsabilidad. El segundo motivo es la herramienta digital que simplifica el trabajo diario y nos permite enfocarnos más en la parte comercial descargando en ellos las tareas administrativas.",
+        "matricula":"77066",
+        "localidad":"San Fernando"
     }
 ]
