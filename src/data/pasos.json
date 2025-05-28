@@ -16,14 +16,14 @@
     {
         "id": 3,
         "nombre": "Crecimiento",
-        "descripcion": "acompañaremos tu desarrollo maximizando los rendimientos de tu cartera actual y colaborando con la prospección de nuevos asegurados.",
+        "descripcion": "Acompañaremos tu desarrollo maximizando los rendimientos de tu cartera actual y colaborando con la prospección de nuevos asegurados.",
         "imagen": "../images/label3.avif",
         "bg_color": "#ee791b"
     },
     {
         "id": 4,
         "nombre": "Comunidad",
-        "descripcion": "te convertirás en un Asesor Digital de Seguros capaz de administrar y comercializar seguros en todo el país y serás miembro de la comunidad Pasaper con acceso a capacitaciones y eventos exclusivos.",
+        "descripcion": "Te convertirás en un Asesor Digital de Seguros capaz de administrar y comercializar seguros en todo el país y serás miembro de la comunidad Pasaper con acceso a capacitaciones y eventos exclusivos.",
         "imagen": "../images/label4.avif",
         "bg_color": "#b98dbf"
     }
