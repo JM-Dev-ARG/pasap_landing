@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
----7
+---
 
 <!doctype html>
 <html lang="en">
@@ -15,52 +15,98 @@ import "../styles/global.css";
       type="image/svg+xml"
       href="/images/logotipo_sf.avif"
     />
-    
+
     <meta
       name="generator"
       content={Astro.generator}
     />
 
-<!-- Google Tag Manager -->
-<script is:inline>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5P9DM3W6');
-  </script>
-  <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager -->
+    <script is:inline>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5P9DM3W6");
+    </script>
+    <!-- End Google Tag Manager -->
 
-  <!-- Meta Pixel Code -->
-<script is:inline>
-  
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '500463754400518');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=500463754400518&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
-  
-  
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YG8MXXFEFQ"
+      is:inline
+    ></script>
+    <script>
+      /* @ts-ignore */
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        /* @ts-ignore */
+        dataLayer.push(arguments);
+      }
+      /* @ts-ignore */
+      gtag("js", new Date());
+      /* @ts-ignore */
+      gtag("config", "G-YG8MXXFEFQ");
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script is:inline>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "500463754400518");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=500463754400518&ev=PageView&noscript=1"
+      /></noscript
+    >
+    <!-- End Meta Pixel Code -->
 
     <title>Activate con PASAP</title>
   </head>
   <body class="font-body font-normal bg-green-50 text-gray-900">
     <slot />
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5P9DM3W6"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5P9DM3W6"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      ></iframe></noscript
+    >
+    <!-- End Google Tag Manager (noscript) -->
   </body>
 </html>
 
@@ -72,5 +118,3 @@ import "../styles/global.css";
     height: 100%;
   }
 </style>
-
-
